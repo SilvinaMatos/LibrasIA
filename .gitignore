@@ -44,3 +44,16 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Python / Backend
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+
+# Google Colab
+.ipynb_checkpoints/
+
+# PDFs locais do backend
+backend/*.pdf
