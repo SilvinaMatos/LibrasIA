@@ -1,0 +1,150 @@
+<div class="pagina">
+
+  <!-- CABEÇALHO -->
+  <header class="cabecalho">
+
+    <div class="logo">
+      🤟 <span>Libras<span class="destaque">IA</span></span>
+    </div>
+
+    <nav>
+      <a>Início</a>
+      <a>Sobre</a>
+    </nav>
+
+  </header>
+
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="conteudo">
+
+    <!-- LADO ESQUERDO -->
+    <aside class="materiais">
+
+      <h2>📚 Materiais</h2>
+
+      <div class="material">
+        <span>📖</span>
+        <div>
+          <strong>Curso Básico de Libras</strong>
+          <small>Material de referência</small>
+        </div>
+      </div>
+
+      <div class="material">
+        <span>📄</span>
+        <div>
+          <strong>Fiocruz</strong>
+          <small>Sinais introdutórios</small>
+        </div>
+      </div>
+
+      <div class="info">
+        <h3>Sobre o LibrasIA</h3>
+
+        <p>
+          Assistente de IA para auxiliar iniciantes
+          no aprendizado da Língua Brasileira de Sinais.
+        </p>
+      </div>
+
+    </aside>
+
+
+    <!-- ÁREA DO ASSISTENTE -->
+    <section class="assistente">
+
+      <div class="titulo">
+
+        <h1>Assistente LibrasIA</h1>
+
+        <p>
+          Faça uma pergunta sobre Libras.
+        </p>
+
+      </div>
+
+
+      <!-- RESPOSTA -->
+      <div class="resposta">
+
+        <h2>Resposta do LibrasIA</h2>
+
+        <div class="conteudo-resposta">
+
+          <p>
+            Olá! Eu sou o LibrasIA.
+            
+          </p>
+
+
+          <p>
+            Faça uma pergunta sobre Libras e
+            eu procurarei a resposta nos materiais
+            de referência.
+          </p>
+          
+          <p *ngIf="resposta">
+            {{ resposta }}
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- ÁREA INFERIOR -->
+      <div class="area-inferior">
+
+        <!-- PERGUNTA -->
+        <div class="pergunta">
+
+          <label for="pergunta">
+            Faça sua pergunta
+          </label>
+
+          <textarea
+            id="pergunta"
+            placeholder="Digite sua dúvida sobre Libras..."
+            rows="4"
+            [(ngModel)]="pergunta">
+          </textarea>
+
+          <button (click)="enviarPergunta()">
+            Enviar
+          </button>
+
+        </div>
+
+
+        <!-- ESPAÇO PARA RECURSO VISUAL -->
+        <div class="visual">
+
+          <h3>🤟 Sinal visual</h3>
+
+          <div class="imagem-placeholder">
+
+            <span>Imagem do sinal</span>
+
+          </div>
+
+          <p>
+            Os recursos visuais serão apresentados
+            quando disponíveis.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- RODAPÉ -->
+  <footer>
+    LibrasIA — Assistente para aprendizado de Libras
+  </footer>
+
+</div>
