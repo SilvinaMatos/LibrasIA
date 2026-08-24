@@ -72,6 +72,7 @@ O projeto foi desenvolvido utilizando uma arquitetura dividida em três principa
 │  Busca semântica            │
 └─────────────────────────────┘
 ```
+<img width="1316" height="629" alt="interface2" src="https://github.com/user-attachments/assets/57c7959e-c8e0-4950-bade-d61f5a6a5152" />
 
 ---
 
